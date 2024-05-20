@@ -62,7 +62,7 @@ public:
     }
 
     static Game createGame() {
-        // Initialize players' information
+        // Initialize players information
         std::vector<PlayerInfo> players = PlayerInfo::createPlayers();
 
         // Create a game instance with the list of players
@@ -85,7 +85,7 @@ public:
         cout << "+-----------+" << endl;
     }
 
-    // Function to handle a player's move
+    // Function to handle player move
     void playerMove(const PlayerInfo& player) {
         cout << "Player: " << player.getPlayerName() << " enter cell (row and column): " << endl;
 
@@ -144,7 +144,7 @@ int main() {
     // Declare and create the game
     Game game = Game::createGame();
 
-    // Main game loop
+    // Play the game
     int moveCount = 0;
     while (true) {
         game.displayGrid();
